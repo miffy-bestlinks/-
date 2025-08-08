@@ -1,9 +1,20 @@
+ご提示いただいたHTMLコードを元に、指摘事項を反映させた修正案を作成しました。
 
+以下の3点に絞り、法的なリスクを軽減しつつ、ユーザーの信頼を得られるように改善しています。
+
+1.  **ヒーローセクションへの注意書きの追加**
+2.  **FAQセクションへの「審査」に関する質問の追加**
+3.  **シミュレーション結果への注意書きの追加**
+
+### 修正コード
+
+以下が修正後の完全なHTMLコードです。
+
+```html
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0J0C5N688V"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0J0C5N688V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,7 +26,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>-LP</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="-LP" />
@@ -28,21 +38,8 @@
 <meta property="twitter:title" content="-LP" />
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","headline":"-LP","name":"-LP","url":"https://masafumisugi.github.io/-LP/"}</script>
-<!-- End Jekyll SEO tag -->
-
-    <link rel="stylesheet" href="/-LP/assets/css/style.css?v=92846c60968011948cf9bccdd6768fb727646262">
-    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-
-<!-- Setup Google Analytics -->
-
-
-
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/-LP/favicon.ico" -->
-
-<!-- end custom head snippets -->
-
-  </head>
+<link rel="stylesheet" href="/-LP/assets/css/style.css?v=92846c60968011948cf9bccdd6768fb727646262">
+    </head>
   <body>
     <div class="container-lg px-3 my-5 markdown-body">
       
@@ -124,7 +121,6 @@
     </style>
 </head>
 <body class="bg-gradient-custom min-h-screen">
-    <!-- Header -->
     <header class="bg-white shadow-sm border-b border-orange-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex justify-between items-center">
@@ -142,7 +138,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="relative hero-gradient py-16 px-4">
         <div class="max-w-7xl mx-auto text-center">
             <div class="mb-6">
@@ -172,13 +167,13 @@
                 <div class="text-lg text-gray-600">リノベーション！</div>
                 <div class="mt-3 text-sm text-green-700 font-bold">※特別金利適用で最大月々5万円の軽減効果</div>
             </div>
+            <p class="mt-4 text-xs text-gray-700">※住宅ローン借り換えには、金融機関所定の審査がございます。審査の結果、ご希望に沿えない場合がございますので、あらかじめご了承ください。</p>
             <div class="mt-6 text-sm text-gray-600">
                 大阪・兵庫・奈良・京都エリア対応
             </div>
         </div>
     </section>
 
-    <!-- Simulation Section -->
     <section id="simulation" class="py-16 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
@@ -194,7 +189,6 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- Calculator Input -->
                 <div class="bg-orange-50 rounded-xl p-6 shadow-custom">
                     <h3 class="text-2xl font-bold text-gray-900 mb-6">現在のローン情報</h3>
                     <div class="space-y-4">
@@ -224,7 +218,6 @@
                     </div>
                 </div>
 
-                <!-- Results -->
                 <div class="space-y-6">
                     <div id="results" class="hidden">
                         <div class="result-card rounded-xl p-6 shadow-custom mb-6">
@@ -272,10 +265,10 @@
                     </div>
                 </div>
             </div>
+            <p class="mt-8 text-sm text-gray-600 text-center">※このシミュレーション結果は概算であり、実際の借り換え効果を保証するものではありません。借り換えには金融機関所定の審査があり、お客様の状況により結果は異なります。</p>
         </div>
     </section>
 
-    <!-- Benefits Section -->
     <section id="benefits" class="py-16 px-4 bg-orange-50">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
@@ -311,7 +304,6 @@
         </div>
     </section>
 
-    <!-- Company Strength Section -->
     <section class="py-16 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
@@ -354,7 +346,6 @@
         </div>
     </section>
 
-    <!-- Process Section -->
     <section class="py-16 px-4 bg-orange-50">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-12">
@@ -384,7 +375,6 @@
         </div>
     </section>
 
-    <!-- FAQ Section -->
     <section id="faq" class="py-16 px-4 bg-white">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
@@ -393,6 +383,14 @@
             </div>
 
             <div class="space-y-6">
+                <div class="bg-orange-50 rounded-xl p-6 shadow-custom">
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">
+                        <i class="fas fa-question-circle text-orange-600 mr-2"></i>
+                        誰でも住宅ローンを借り換えられますか？
+                    </h3>
+                    <p class="text-gray-600">住宅ローンの借り換えには、金融機関所定の審査がございます。現在の返済状況や年収などの条件によっては、審査に通過できない場合もございます。まずは無料相談で、お客様の状況に合わせた最適なプランを一緒に検討させてください。</p>
+                </div>
+
                 <div class="bg-orange-50 rounded-xl p-6 shadow-custom">
                     <h3 class="text-lg font-bold text-gray-900 mb-3">
                         <i class="fas fa-question-circle text-orange-600 mr-2"></i>
@@ -436,7 +434,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="py-16 px-4 bg-orange-600">
         <div class="max-w-4xl mx-auto text-center">
             <h2 class="text-4xl font-bold text-white mb-4">今すぐ無料相談を始める</h2>
@@ -454,8 +451,8 @@
                     <i class="fas fa-envelope text-3xl text-orange-600 mb-4"></i>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">メールでのご相談</h3>
                     <a href="https://www.best-links.co.jp/contact" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-lg transition-colors inline-block max-w-max" target="_blank">
-                     お問い合わせフォーム
-                     </a>
+                      お問い合わせフォーム
+                      </a>
                     <p class="text-gray-600 mt-2">24時間受付<br />2営業日以内にご返信</p>
                 </div>
             </div>
@@ -472,7 +469,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12 px-4">
         <div class="max-w-7xl mx-auto">
             <div class="grid md:grid-cols-3 gap-8">
@@ -566,7 +562,7 @@
 
             // Calculate new monthly payment with special rate (0.7%)
             const newPayment = (balanceInYen * monthlyNewRate * Math.pow(1 + monthlyNewRate, remainingMonths)) / 
-                             (Math.pow(1 + monthlyNewRate, remainingMonths) - 1);
+                               (Math.pow(1 + monthlyNewRate, remainingMonths) - 1);
 
             // Calculate savings
             const monthlySavings = currentPayment - newPayment;
